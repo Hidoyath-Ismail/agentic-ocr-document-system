@@ -1,19 +1,23 @@
 # Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
 .venv/
-env/
+venv/
 
-# Node / JS
-node_modules/
-
-# OS / IDE
-.DS_Store
-.vscode/
-.idea/
-
-# Secrets
+# Environment variables
 .env
+.env.*
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
 
 # Logs
 *.log
