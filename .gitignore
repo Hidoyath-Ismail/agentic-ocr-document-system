@@ -10,7 +10,7 @@ venv/
 
 # Environment variables
 .env
-.env.*
+!.env.example
 
 # VS Code
 .vscode/
@@ -20,4 +20,9 @@ venv/
 Thumbs.db
 
 # Logs
+*.log
+
+# Runtime / generated data
+data/uploads/
+data/kb_index/
 *.log
