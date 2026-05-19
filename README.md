@@ -56,7 +56,9 @@ validation
 human review if needed
         ↓
 finalize and save outputs
-Architecture
+```
+
+## Architecture
 
 The project separates the workflow into single-responsibility components:
 
@@ -75,7 +77,8 @@ src/
 └── workflow/
     ├── graph.py
     └── state.py
-Tech Stack
+
+## Tech Stack
 Python
 Streamlit
 LangGraph
@@ -87,23 +90,25 @@ Tesseract OCR
 Poppler
 OpenAI API
 JSON-based audit output
-Validation and Auditability
+
+## Validation and Auditability
 
 A key design goal of this project is controlled AI usage. The system first attempts deterministic extraction and validation before using LLM fallback. The LLM is used only when required, and validation is rerun after fallback extraction.
 
 The system also maintains audit notes across the workflow so that the processing path is traceable. This makes the project especially relevant for regulated or quality-sensitive environments where explainability, reviewability, and validation matter.
 
-Human-in-the-Loop Review
+## Human-in-the-Loop Review
 
 When extracted data is incomplete or validation fails, the Streamlit interface allows the user to review and correct fields before finalizing the document. This prevents the system from blindly accepting low-confidence AI output.
 
-Sample Outputs
+## Sample Outputs
 
 The system generates two types of JSON outputs:
 
 Clean JSON — structured document data suitable for downstream systems
 Audit JSON — includes processing metadata, validation status, audit notes, and traceability details
-Screenshots
+
+## Screenshots
 
 Screenshots will be added to show:
 
@@ -115,7 +120,8 @@ Validation status
 Human review section
 Final saved JSON outputs
 Audit trail
-How to Run Locally
+
+## How to Run Locally
 
 Clone the repository:
 
@@ -136,13 +142,16 @@ Create a .env file based on .env.example and add the required environment variab
 Run the Streamlit app:
 
 streamlit run src/web_app/streamlit_app.py
-Future Improvements
-Add sample synthetic documents for demo use
-Add unit tests for validation and extraction rules
-Add deployment support
-Add document type-specific extraction strategies
-Add confidence scoring for extracted fields
-Add support for more document formats
-What I Learned
+
+## Future Improvements
+
+- Add sample synthetic documents for demo use
+- Add unit tests for validation and extraction rules
+- Add deployment support
+- Add document type-specific extraction strategies
+- Add confidence scoring for extracted fields
+- Add support for more document formats
+
+## What I Learned
 
 This project helped me practice designing an AI workflow that is not just a prototype, but a more reliable document processing pipeline. I learned how to combine deterministic logic, OCR, LLM fallback, validation rules, human review, and audit trail generation into a single end-to-end system.
