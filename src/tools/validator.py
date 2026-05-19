@@ -9,6 +9,7 @@ def validate_structured_data(
 ) -> Tuple[str, List[str], bool]:
     """
     Validate extracted structured data.
+    This's the deterministic gate that decides if the extraction is good enough or if it needs human review.
 
     Returns:
         validation_status: "pass" | "fail"

@@ -24,5 +24,9 @@ Thumbs.db
 
 # Runtime / generated data
 data/uploads/
+data/outputs/
 data/kb_index/
 *.log
+data/kb_raw/
+data/kb_index/
+data/kb_raw/
