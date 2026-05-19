@@ -61,7 +61,7 @@ finalize and save outputs
 ## Architecture
 
 The project separates the workflow into single-responsibility components:
-
+```text
 src/
 ├── schemas/
 │   └── extraction.py
@@ -77,6 +77,7 @@ src/
 └── workflow/
     ├── graph.py
     └── state.py
+```
 
 ## Tech Stack
 Python
