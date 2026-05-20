@@ -8,6 +8,12 @@ The Agentic OCR Document Intake System is designed to process business documents
 
 This project was built to demonstrate production-oriented AI workflow design, with a focus on traceability, validation, reviewability, and audit-ready outputs.
 
+## Why This Project Matters
+
+This project demonstrates more than basic OCR. It shows how document automation can be designed with controlled AI usage, validation checkpoints, human review, and auditability.
+
+Instead of sending every document directly to an LLM, the system first attempts deterministic extraction and validation. The LLM is used only as a fallback when required, and the output is re-validated before final approval. This design is especially relevant for quality-sensitive and regulated environments where traceability, reviewability, and reliable outputs are important.
+
 ## Problem Statement
 
 Manual document intake is time-consuming and error-prone. Many document automation systems extract text but do not provide enough validation, fallback logic, or auditability for real-world business workflows.
