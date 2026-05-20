@@ -111,16 +111,35 @@ Audit JSON — includes processing metadata, validation status, audit notes, and
 
 ## Screenshots
 
-Screenshots will be added to show:
+The screenshots below show the end-to-end LLM fallback route, including document upload, PDF preview, extraction, validation feedback, human review, approval, and final JSON output.
 
-PDF upload screen
-Document preview
-Extracted text
-Structured field extraction
-Validation status
-Human review section
-Final saved JSON outputs
-Audit trail
+### 1. Upload Document
+
+![Upload screen](screenshots/01-upload-screen.png)
+
+### 2. PDF Preview
+
+![PDF preview](screenshots/02-pdf-preview.png)
+
+### 3. LLM Fallback Extraction
+
+![LLM fallback extraction](screenshots/03-llm-fallback-extraction.png)
+
+### 4. Audit Trail and Validation Errors
+
+![Audit trail and validation errors](screenshots/04-audit-trail-validation-errors.png)
+
+### 5. Human Review and Approved Output
+
+![Human review approved output](screenshots/05-human-review-approved-output.png)
+
+### 6. Reviewer Details
+
+![Reviewer details](screenshots/06-reviewer-details.png)
+
+### 7. Final JSON Output Link
+
+![Final JSON output link](screenshots/07-final-json-output-link.png)
 
 ## How to Run Locally
 
