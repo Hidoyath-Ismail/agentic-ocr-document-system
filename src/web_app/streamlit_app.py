@@ -8,6 +8,12 @@ import json
 import hashlib
 import platform
 from typing import Optional, Dict, Any
+from pathlib import Path
+import sys
+
+PROJECT_ROOT = Path(__file__).resolve().parents[2]
+if str(PROJECT_ROOT) not in sys.path:
+    sys.path.insert(0, str(PROJECT_ROOT))
 from src.workflow.graph import build_graph
 from src.tools.validator import validate_structured_data
 
