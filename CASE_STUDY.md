@@ -8,12 +8,6 @@ The system uses **Python, LangGraph, Streamlit, Pydantic, OCR, and the OpenAI AP
 
 This project was designed with a production-oriented mindset, especially around **traceability, validation, human review, and controlled AI usage**.
 
-## Detailed Case Study
-
-For a deeper explanation of the project design, workflow, validation strategy, LLM fallback logic, human review process, and audit-ready output structure, see the full case study:
-
-[Read the full case study](CASE_STUDY.md)
-
 ## 2. Problem Statement
 
 Many document automation workflows focus only on extracting text from uploaded documents. However, real-world business documents can be inconsistent, scanned, incomplete, or difficult to parse. A simple OCR-only solution may extract text but still fail to provide reliable structured data.
